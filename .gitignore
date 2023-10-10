@@ -54,3 +54,5 @@ build/
 /.history/
 /.local/
 /.config/
+
+/scr/main/scala/*.class
