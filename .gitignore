@@ -55,4 +55,4 @@ build/
 /.local/
 /.config/
 
-/scr/main/scala/*.class
+

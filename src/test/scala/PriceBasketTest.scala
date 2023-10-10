@@ -1,4 +1,5 @@
 import org.scalatest.funsuite.AnyFunSuite
+import pricebasket.PriceBasket
 
 class PriceBasketTest extends AnyFunSuite{
 
@@ -14,21 +15,21 @@ class PriceBasketTest extends AnyFunSuite{
     assert(subtotal === 6.6)
   }
 
-  //  test("PriceBasket should calculate discounts correctly") {
-  //    val basket = List("Soup", "Soup", "Bread", "Apples", "Apples")
-  //    val discounts = PriceBasket.calculateDiscounts(basket)
-  //    assert(discounts === List(0.40, 0.40, 0.2))
-  //  }
-  //
-  //  test("PriceBasket should format price correctly") {
-  //    val formattedPrice = PriceBasket.formatPrice(3.5)
-  //    assert(formattedPrice === "3.50")
-  //  }
-  //
-  //  test("PriceBasket should format discount correctly") {
-  //    val formattedDiscount = PriceBasket.formatDiscount(0.75)
-  //    assert(formattedDiscount === "0.75 off")
-  //  }
+    test("PriceBasket should calculate discounts correctly") {
+      val basket = List("Soup", "Soup", "Bread", "Apples", "Apples")
+      val discounts = PriceBasket.calculateDiscounts(basket)
+      assert(discounts === List(0.40, 0.40, 0.2))
+    }
+
+    test("PriceBasket should format price correctly") {
+      val formattedPrice = PriceBasket.formatPrice(3.5)
+      assert(formattedPrice === "3.50")
+    }
+
+    test("PriceBasket should format discount correctly") {
+      val formattedDiscount = PriceBasket.formatDiscount(0.75)
+      assert(formattedDiscount === "-0.75 off")
+    }
 
 
 }
