@@ -1,0 +1,56 @@
+# Compiled class files
+target/
+
+# SBT project directory
+project/target/
+
+# IDE files
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Eclipse project files
+.classpath
+.project
+.settings/
+
+# IntelliJ project files
+*.iml
+*.ipr
+*.iws
+.idea/
+*.idea_modules/
+out/
+
+# Metals
+.metals/
+
+# Bloop
+.bloop/
+
+# Maven
+log/
+
+# Gradle
+.gradle/
+build/
+
+# sbt native packager
+.pack/
+
+# User-specific files
+/.cache/
+/.history/
+/.local/
+/.config/
