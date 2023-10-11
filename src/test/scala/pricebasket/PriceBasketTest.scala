@@ -1,3 +1,5 @@
+package test.scala.pricebasket
+
 import org.scalatest.funsuite.AnyFunSuite
 import pricebasket.PriceBasket
 
